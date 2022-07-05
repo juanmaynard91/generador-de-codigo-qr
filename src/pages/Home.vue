@@ -66,7 +66,7 @@ p {
   text-align: center;
 }
 
-@media screen and (width: 393px) {
+@media screen and (width: 375px) {
   .home {
     max-width: 100%;
     height: 140vh;
