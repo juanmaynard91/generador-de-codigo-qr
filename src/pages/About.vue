@@ -1,0 +1,45 @@
+<template>
+  <div class="container about">
+    <h3>Generar codigo QR</h3>
+    <form @submit.prevent="formulario">
+      <input type="text" placeholder="ingrese url" class="form-control mt-3 mb-3" v-model.trim="dato" />
+    </form>
+
+    <qrcode-vue :value="dato" :size="340" v-if="dato" class="size" />
+
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+import QrcodeVue from "qrcode.vue"; // npm
+
+const dato = ref("");
+
+const formulario = () => {
+  dato.value = "";
+};
+</script>
+
+<style>
+.about {
+  height: 86.5vh;
+}
+
+form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+h3 {
+  margin-top: 20px;
+  /*text-align: start;*/
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.size {
+  margin-top: 20px;
+  box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;
+}
+</style>
