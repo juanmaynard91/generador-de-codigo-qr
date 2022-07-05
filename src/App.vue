@@ -44,7 +44,7 @@ body {
   padding-right: 0 !important;
 }
 
-@media screen and (width: 412px) {
+@media screen and (width: 393px) {
   #app {
     height: auto;
   }
