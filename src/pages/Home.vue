@@ -66,7 +66,7 @@ p {
   text-align: center;
 }
 
-@media screen and (width: 360px) {
+@media screen and (max-width: 412px) {
   .home {
     max-width: 100%;
     height: auto;
