@@ -66,10 +66,10 @@ p {
   text-align: center;
 }
 
-@media screen and (width: 375px) {
+@media screen and (width: 360px) {
   .home {
     max-width: 100%;
-    height: 140vh;
+    height: auto;
   }
 }
 </style>

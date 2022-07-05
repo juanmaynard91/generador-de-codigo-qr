@@ -128,7 +128,7 @@ li a:hover {
   color: #fff;
 }
 
-@media screen and (width: 375px) {
+@media screen and (width: 360px) {
   navbar-nav {
     flex-direction: row;
   }
