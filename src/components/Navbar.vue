@@ -140,4 +140,17 @@ li a:hover {
     justify-content: flex-start;
   }
 }
+
+@media screen and (max-width: 915px) {
+  navbar-nav {
+    flex-direction: row;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 </style>

@@ -49,4 +49,10 @@ body {
     height: auto;
   }
 }
+
+@media screen and (max-width: 915px) {
+  #app {
+    height: auto;
+  }
+}
 </style>

@@ -51,9 +51,15 @@ img:hover {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 412px) {
   img {
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  img {
+    height: 260px;
   }
 }
 </style>
