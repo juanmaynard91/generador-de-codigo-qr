@@ -19,8 +19,8 @@
   font-size: 25px;
   width: 100%;
   height: 52px;
-  position: sticky;
-  bottom: 0;
+  /*position: sticky;
+  bottom: 0;*/
 }
 
 .footer__icon {
@@ -31,5 +31,18 @@
 
 .footer__icon:hover {
   color: #d7dde8;
+}
+
+@media screen and (min-width: 412px) {
+  .footer {
+    position: sticky !important;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 915px) {
+  .footer {
+    position: static !important;
+  }
 }
 </style>

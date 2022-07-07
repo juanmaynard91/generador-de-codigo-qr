@@ -1,10 +1,19 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <!--<a class="navbar-brand" href="#">Vue</a>-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button>-->
+
+<label for="check" type="button" class="bar navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <input id="check" type="checkbox">
+
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</label>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -76,7 +85,7 @@ li a:hover {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
-  margin: 1.5rem 18rem 1.5rem 0;
+  margin: 2rem 18rem 0.5rem 0;
 }
 
 .nav-item {
@@ -90,7 +99,6 @@ li a:hover {
   margin: 0 30px 0 0;
 }
 
-/* From uiverse.io by @nikk7007 */
 .btn {
   padding: 0.8em 1.8em;
   border: 2px solid #7f00ff;
@@ -139,6 +147,12 @@ li a:hover {
     display: flex;
     justify-content: flex-start;
   }
+
+  .navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1 !important; 
+  }
 }
 
 @media screen and (max-width: 915px) {
@@ -152,5 +166,67 @@ li a:hover {
     display: flex;
     justify-content: flex-start;
   }
+
+  .navbar {
+    position: static;
+  }
+}
+
+/* From uiverse.io by @Ali-Tahmazi99 */
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.bar {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  /*height: 40px;*/
+  height: 14px;
+}
+
+.bar span {
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  background: #f1faee;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+}
+
+.bar span.top {
+  top: 0;
+}
+
+.bar span.middle {
+  top: 17px;
+}
+
+.bar span.bottom {
+  bottom: 0;
+}
+
+input[type]:checked ~ span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 48px;
+  left: 5px;
+}
+
+input[type]:checked ~ span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 48px;
+  bottom: -25px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
 }
 </style>

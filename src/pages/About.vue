@@ -6,7 +6,6 @@
     </form>
 
     <qrcode-vue :value="dato" :size="270" v-if="dato" class="size" />
-
   </div>
 </template>
 
@@ -23,7 +22,7 @@ const formulario = () => {
 
 <style>
 .about {
-  height: 86.4vh;
+  height: 86.6vh;
 }
 
 form {
@@ -39,13 +38,13 @@ h3 {
 }
 
 .size {
-  margin-top: 20px;
+  margin: 0 0 5% 0;
   box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;
 }
 
 @media screen and (max-width: 915px) {
-.about {
-  height: 100vh;
-}
+  .about {
+    height: 100vh;
+  }
 }
 </style>

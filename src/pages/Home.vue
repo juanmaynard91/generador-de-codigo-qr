@@ -53,7 +53,7 @@ import Carrusel from "../components/Carrusel.vue";
 .home {
   max-width: 50%;
   /*margin-bottom: 11%;*/
-  height: 87vh;
+  height: 87.9vh;
 }
 
 h3 {
