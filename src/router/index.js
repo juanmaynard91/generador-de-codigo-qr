@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router"
 import { getAuth, onAuthStateChanged } from "@firebase/auth";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2' // npm advertencia de registro
 
 const router = createRouter({
     history: createWebHistory(),

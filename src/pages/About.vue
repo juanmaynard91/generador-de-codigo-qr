@@ -31,20 +31,26 @@ form {
 }
 
 h3 {
-  margin-top: 20px;
+  margin: 30px;
   /*text-align: start;*/
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .size {
-  margin: 0 0 5% 0;
+  margin: 30px 0 30px 0;
   box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 360px) {
   .about {
-    height: 100vh;
+    height: 81vh !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .about {
+    height: 130vh;
   }
 }
 </style>

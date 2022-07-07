@@ -33,14 +33,14 @@
   color: #d7dde8;
 }
 
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 360px) {
   .footer {
     position: sticky !important;
     bottom: 0;
   }
 }
 
-@media screen and (min-width: 915px) {
+@media screen and (min-width: 740px) {
   .footer {
     position: static !important;
   }

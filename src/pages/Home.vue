@@ -56,6 +56,10 @@ import Carrusel from "../components/Carrusel.vue";
   height: 89.4vh;
 }
 
+.row{
+  margin-top: 30px;
+}
+
 h3 {
   margin-top: 30px;
   /*text-align: start;*/

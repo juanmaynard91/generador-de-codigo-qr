@@ -31,12 +31,7 @@
 </template>
 
 <script setup>
-import {
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-} from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { useRouter } from "vue-router";
 import { inject } from "vue";
 
