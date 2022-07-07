@@ -22,7 +22,7 @@ const formulario = () => {
 
 <style>
 .about {
-  height: 86.6vh;
+  height: 88.8vh;
 }
 
 form {

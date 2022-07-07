@@ -81,6 +81,10 @@ li a:hover {
   text-transform: uppercase;
 }
 
+/*.navbar-expand-lg .navbar-collapse{
+  margin-top: 10px;
+}*/
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -170,6 +174,12 @@ li a:hover {
   .navbar {
     position: static;
   }
+}
+
+@media screen and (min-width: 1566px) {
+  .navbar-expand-lg .navbar-collapse{
+  margin-top: 10px;
+ }
 }
 
 /* From uiverse.io by @Ali-Tahmazi99 */
