@@ -42,13 +42,13 @@ h3 {
   box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 412px) {
   .about {
-    height: 81vh !important;
+    height: 84vh !important;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 915px) {
   .about {
     height: 130vh;
   }
