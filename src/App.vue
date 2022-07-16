@@ -1,6 +1,11 @@
 <template>
   <Navbar />
-  <router-view />
+  <!-- animando el router-view -->
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in" appear>
+      <keep-alive> <component :is="Component" /> </keep-alive>
+    </transition>
+  </router-view>
   <Footer />
 </template>
 
@@ -54,5 +59,15 @@ body {
   #app {
     height: auto;
   }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
 }
 </style>
