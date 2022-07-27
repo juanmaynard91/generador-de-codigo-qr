@@ -21,36 +21,5 @@ const formulario = () => {
 </script>
 
 <style>
-.about {
-  height: 88.8vh;
-}
-
-form {
-  margin: 0 auto;
-  width: 70%;
-}
-
-h3 {
-  margin: 30px;
-  /*text-align: start;*/
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.size {
-  margin: 30px 0 30px 0;
-  box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;
-}
-
-@media screen and (max-width: 412px) {
-  .about {
-    height: 84vh !important;
-  }
-}
-
-@media screen and (max-width: 915px) {
-  .about {
-    height: 130vh;
-  }
-}
+.about {height: 88.8vh;}form {margin: 0 auto;width: 70%;}h3 {margin: 30px;text-decoration: underline;text-transform: uppercase;}.size {margin: 30px 0 30px 0;box-shadow: rgb(0 0 0 / 50%) 0 1rem 1rem;}@media screen and (max-width: 412px) {.about {height: 84vh !important;}}@media screen and (max-width: 915px) {.about {height: 130vh;}}
 </style>

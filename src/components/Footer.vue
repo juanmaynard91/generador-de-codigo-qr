@@ -12,37 +12,5 @@
 </script>
 
 <style>
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  width: 100%;
-  height: 52px;
-  /*position: sticky;
-  bottom: 0;*/
-}
-
-.footer__icon {
-  padding: 0 10px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer__icon:hover {
-  color: #d7dde8;
-}
-
-@media screen and (min-width: 360px) {
-  .footer {
-    position: sticky !important;
-    bottom: 0;
-  }
-}
-
-@media screen and (min-width: 740px) {
-  .footer {
-    position: static !important;
-  }
-}
+.footer {display: flex;align-items: center;justify-content: center;font-size: 25px;width: 100%;height: 52px;}.footer__icon {padding: 0 10px;text-decoration: none;color: #fff;}.footer__icon:hover {color: #d7dde8;}@media screen and (min-width: 360px) {.footer {position: sticky !important;bottom: 0;}}@media screen and (min-width: 740px) {.footer {position: static !important;}}
 </style>

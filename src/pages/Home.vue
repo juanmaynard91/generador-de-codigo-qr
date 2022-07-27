@@ -50,37 +50,5 @@ import Carrusel from "../components/Carrusel.vue";
 </script>
 
 <style>
-.home {
-  max-width: 50%;
-  /*margin-bottom: 11%;*/
-  height: 89.4vh;
-}
-
-.row{
-  margin-top: 30px;
-}
-
-h3 {
-  margin-top: 30px;
-  /*text-align: start;*/
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-p {
-  text-align: center;
-}
-
-@media screen and (max-width: 412px) {
-  .home {
-    max-width: 100% !important;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 915px) {
-  .home {
-    max-width: 70%;
-    height: auto;
-  }
-}
+.home {max-width: 50%;height: 89.4vh;}.row{margin-top: 30px;}h3 {margin-top: 30px;text-decoration: underline;text-transform: uppercase;}p {text-align: center;}@media screen and (max-width: 412px) {.home {max-width: 100% !important;height: auto;}}@media screen and (max-width: 915px) {.home {max-width: 70%;height: auto;}}
 </style>
